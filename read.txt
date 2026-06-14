@@ -1,0 +1,45 @@
+# 🚨 Rogue AP Detector - Beacon Frame Fingerprinting
+
+**Hệ thống phát hiện và ngăn chặn Rogue Access Point dựa trên Beacon Frame Fingerprinting + Risk Scoring**
+
+Phiên bản: **2.4**  
+Ngôn ngữ: Python + Scapy + Streamlit
+
+---
+
+## ✨ Giới thiệu
+
+Hệ thống sử dụng kỹ thuật **Beacon Frame Fingerprinting** để học đặc trưng của Access Point hợp pháp và phát hiện Rogue AP (Evil Twin). Hệ thống có khả năng tự động ngăn chặn bằng Deauth Attack và gửi cảnh báo qua **Telegram**.
+
+**Phù hợp cho đồ án tốt nghiệp** với đề tài:  
+**"Nghiên cứu và xây dựng mô hình phát hiện Rogue Access Point dựa trên phân tích Beacon Frame và Fingerprinting"**
+
+---
+
+## 🚀 Tính năng nổi bật
+
+- Học fingerprint AP hợp pháp (Learning Mode)
+- Tính **Risk Score** (0-100) cho từng AP
+- Tự động phát hiện Rogue AP (SSID thay đổi, Channel hopping, Evil Twin...)
+- Ngăn chặn bằng **Deauth Attack**
+- Gửi cảnh báo realtime qua **Telegram**
+- Giao diện web đẹp bằng **Streamlit Dashboard**
+- Export dữ liệu CSV / JSON
+
+---
+
+## 📁 Cấu trúc dự án
+rogue-detection/
+├── app.py                    # Dashboard Streamlit (v2.4)
+├── main.py                   # Beacon Sniffer chính
+├── config.py
+├── analyzer.py
+├── deauth.py
+├── utils.py
+├── state.py
+├── telegram_alert.py         # Gửi thông báo Telegram
+├── known_fingerprints.json
+├── rogue_dataset.csv
+├── rogue_alerts.log
+├── oui.txt
+└── README.md
