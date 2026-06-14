@@ -29,21 +29,8 @@ Hệ thống sử dụng kỹ thuật **Beacon Frame Fingerprinting** để họ
 ---
 
 ## 📁 Cấu trúc dự án
-rogue-detection/
-├── app.py                  # Dashboard Streamlit
-├── main.py                 # Beacon Sniffer chính
-├── config.py               # Cấu hình chế độ chạy
-├── analyzer.py             # Phân tích & tính Risk Score
-├── deauth.py               # Module Deauth Attack
-├── utils.py
-├── state.py
-├── telegram_alert.py       # Gửi cảnh báo Telegram
-├── known_fingerprints.json # Database fingerprint đã học
-├── rogue_dataset.csv       # Dữ liệu AP thu thập
-├── rogue_alerts.log        # Log cảnh báo
-├── oui.txt
-└── README.md
-text---
+<img width="572" height="473" alt="image" src="https://github.com/user-attachments/assets/a01b4491-ef98-44e6-96b8-af730689f679" />
+
 
 ## 🛠️ Cài đặt môi trường
 
