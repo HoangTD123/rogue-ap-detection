@@ -11,7 +11,7 @@ Ngôn ngữ: Python + Scapy + Streamlit
 
 Hệ thống sử dụng kỹ thuật **Beacon Frame Fingerprinting** để học đặc trưng của Access Point hợp pháp và phát hiện Rogue AP (Evil Twin). Hệ thống có khả năng tự động ngăn chặn bằng Deauth Attack và gửi cảnh báo qua **Telegram**.
 
-**Phù hợp cho đồ án tốt nghiệp** với đề tài:  
+**Phù hợp cho đồ án tốt nghiệp** với đề tài:  s
 **"Nghiên cứu và xây dựng mô hình phát hiện Rogue Access Point dựa trên phân tích Beacon Frame và Fingerprinting"**
 
 ---
@@ -30,17 +30,17 @@ Hệ thống sử dụng kỹ thuật **Beacon Frame Fingerprinting** để họ
 
 ## 📁 Cấu trúc dự án
 rogue-detection/
-├── app.py                    # Dashboard Streamlit (v2.4)
-├── main.py                   # Beacon Sniffer chính
-├── config.py
-├── analyzer.py
-├── deauth.py
+├── app.py                  # Dashboard Streamlit
+├── main.py                 # Beacon Sniffer chính
+├── config.py               # Cấu hình chế độ chạy
+├── analyzer.py             # Phân tích & tính Risk Score
+├── deauth.py               # Module Deauth Attack
 ├── utils.py
 ├── state.py
-├── telegram_alert.py         # Gửi thông báo Telegram
-├── known_fingerprints.json
-├── rogue_dataset.csv
-├── rogue_alerts.log
+├── telegram_alert.py       # Gửi cảnh báo Telegram
+├── known_fingerprints.json # Database fingerprint đã học
+├── rogue_dataset.csv       # Dữ liệu AP thu thập
+├── rogue_alerts.log        # Log cảnh báo
 ├── oui.txt
 └── README.md
 text---
